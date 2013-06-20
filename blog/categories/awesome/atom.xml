@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Carlos Cuba]]></title>
-  <link href="http://kae239.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Awesome | Carlos Cuba]]></title>
+  <link href="http://kae239.github.io/blog/categories/awesome/atom.xml" rel="self"/>
   <link href="http://kae239.github.io/"/>
   <updated>2013-06-20T01:34:56-05:00</updated>
   <id>http://kae239.github.io/</id>
