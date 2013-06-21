@@ -33,6 +33,16 @@
 
 
 <body>
+
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
     <div id="wrapper">
     <header id="header" class="inner"><!-- for more effects see _animate.scss -->
 <h1 class="animated bounceInDown">
@@ -105,16 +115,18 @@
     
     <div class="entry-content"><p>Mi nombre es Carlos. Qué gusto que hayan personas que quieran saber un poco más de mi; yo estoy ansioso por conocer sus experiencias y aprender todo lo que me sea posible!</p>
 
-<p>Tengo 23 años, soy Bachiller en Ingeniería de Sistemas de la <a href="www.upnorte.edu.pe">Universidad Privada del Norte</a> de <code>Trujillo - Perú</code>, desarrollador empedernido, amante de la música, la tecnología, el diseño y las series de TV. Actualmente trabajo desarrollando Aplicaciones Web, Móviles y de Escritorio.</p>
+<p>Tengo 23 años, soy Bachiller en Ingeniería de Sistemas de la <a href="http://www.upnorte.edu.pe">Universidad Privada del Norte</a> de <code>Trujillo - Perú</code>, desarrollador empedernido, amante de la música, la tecnología, el diseño y las series de TV. Actualmente trabajo desarrollando Aplicaciones Web, Móviles y de Escritorio.</p>
 
-<p>Siéntanse libres de escribirme sobre lo que gusten a <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x63;&#x65;&#46;&#x63;&#117;&#x62;&#x61;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#111;&#x6d;">&#99;&#101;&#x2e;&#x63;&#117;&#x62;&#97;&#x40;&#105;&#99;&#108;&#x6f;&#x75;&#x64;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>Siéntanse libres de escribirme sobre lo que gusten a <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x63;&#101;&#x2e;&#x63;&#117;&#98;&#97;&#x40;&#x69;&#x63;&#108;&#111;&#x75;&#100;&#x2e;&#x63;&#x6f;&#109;">&#x63;&#x65;&#x2e;&#x63;&#x75;&#98;&#x61;&#64;&#x69;&#99;&#x6c;&#x6f;&#117;&#100;&#46;&#x63;&#x6f;&#109;</a></p>
 </div>
 </article>
 
 	<div class="share">
 	<div class="addthis_toolbox addthis_default_style ">
 	
-	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	<a class="addthis_button_facebook_like" style="width: 120px;" fb:like:layout="button_count">
+		<div class="fb-like" data-href="" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false" data-font="lucida grande"></div>
+	</a>
 	
 	
 	<a class="addthis_button_tweet"></a>
