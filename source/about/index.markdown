@@ -13,4 +13,4 @@ Tengo 23 años, soy Bachiller en Ingeniería de Sistemas de la [Universidad Priv
 
 Siéntanse libres de escribirme sobre lo que gusten a <ce.cuba@icloud.com>
 
-[url-upn]:www.upnorte.edu.pe ""
+[url-upn]: http://www.upnorte.edu.pe
