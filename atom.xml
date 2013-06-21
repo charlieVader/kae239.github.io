@@ -4,11 +4,11 @@
   <title><![CDATA[Who's That Geek Blog]]></title>
   <link href="http://kae239.github.io/atom.xml" rel="self"/>
   <link href="http://kae239.github.io/"/>
-  <updated>2013-06-20T19:57:48-05:00</updated>
+  <updated>2013-06-20T20:30:01-05:00</updated>
   <id>http://kae239.github.io/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
-    
+    <email><![CDATA[ce.cuba@icloud.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
