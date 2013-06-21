@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://kae239.github.io
-title: Who's That Geek Blog
-subtitle: Un blog para la nueva generación de geeks.
-author: Carlos Cuba
+title: "Who's That Geek Blog"
+subtitle: "Un blog para la nueva generación de geeks."
+author: "Carlos Cuba"
 simple_search: http://google.com/search
-description:
+description: "Un blog lleno de Tecnología, Tutoriales e Historias para compartir."
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: ce.cuba@icloud.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
