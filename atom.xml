@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Hola. Carlos Cuba]]></title>
+  <title><![CDATA[Carlos Cuba]]></title>
   <link href="http://kae239.github.io/atom.xml" rel="self"/>
   <link href="http://kae239.github.io/"/>
-  <updated>2013-06-21T20:54:01-05:00</updated>
+  <updated>2013-06-21T21:00:55-05:00</updated>
   <id>http://kae239.github.io/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
