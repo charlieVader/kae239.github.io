@@ -9,8 +9,8 @@
 	</h2>
     <div class="entry-content">
     <div class="meta">
-      <div class="date">Published on: {% include post/date.html %}{{ time }}</div>
-      <div class="tags">Tags: {% include post/categories.html %}</div>
+      <div class="date"> {% include post/date.html %}{{ time }}</div>
+      <div class="tags"> {% include post/categories.html %}</div>
     </div>
 		{{ content | excerpt }}
 		{% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
@@ -22,6 +22,6 @@
 {% endif %}
 <div class="meta">
 	{% if site.disqus_short_name and site.disqus_show_comment_count == true %}
-		<span class="comments"><a href="{{ root_url }}{{ post.url }}{{ page.url }}#disqus_thread">Comments</a></span>
+		<span class="comments"><a href="{{ root_url }}{{ post.url }}{{ page.url }}#disqus_thread">Comentarios</a></span>
 	{% endif %}
 </div>
