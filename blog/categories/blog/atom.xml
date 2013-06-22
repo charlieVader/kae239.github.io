@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Blog | Carlos Cuba]]></title>
-  <link href="http://kae239.github.io/blog/categories/blog/atom.xml" rel="self"/>
-  <link href="http://kae239.github.io/"/>
-  <updated>2013-06-21T22:01:16-05:00</updated>
-  <id>http://kae239.github.io/</id>
+  <link href="http://carloscuba.com.pe/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://carloscuba.com.pe/"/>
+  <updated>2013-06-21T22:14:44-05:00</updated>
+  <id>http://carloscuba.com.pe/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
     <email><![CDATA[ce.cuba@icloud.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Primer Post!]]></title>
-    <link href="http://kae239.github.io/blog/2013/06/20/hello-octopress-and-github-pages/"/>
+    <link href="http://carloscuba.com.pe/blog/2013/06/20/hello-octopress-and-github-pages/"/>
     <updated>2013-06-20T01:33:00-05:00</updated>
-    <id>http://kae239.github.io/blog/2013/06/20/hello-octopress-and-github-pages</id>
+    <id>http://carloscuba.com.pe/blog/2013/06/20/hello-octopress-and-github-pages</id>
     <content type="html"><![CDATA[<p>Bienvenidos sean !!! … Hace unos días me encontré con una serie de páginas, videos y enlaces que me guiaban a un solo lugar: <a href="http://octopress.org" title="A blogging framework for hackers">Octopress</a>. Y desde ese momento, hasta hace unos minutos, que estuve reventándome las neuronas para poder publicar finalmente algo; el proceso no ha sido muy fácil, pero una vez que ya está <code>todo seteado</code> la experiencia de bloggear cambia por completo.</p>
 
 <!-- more -->

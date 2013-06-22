@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://kae239.github.io/sitemap.xml 
+Sitemap: http://carloscuba.com.pe/sitemap.xml 

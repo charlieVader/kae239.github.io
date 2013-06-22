@@ -1,35 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://kae239.github.io/blog/2013/06/20/hello-octopress-and-github-pages/</loc>
+        <loc>http://carloscuba.com.pe/blog/2013/06/20/hello-octopress-and-github-pages/</loc>
         <lastmod>2013-06-21T02:54:22-05:00</lastmod>
     </url>
     <url>
-        <loc>http://kae239.github.io/about/</loc>
+        <loc>http://carloscuba.com.pe/about/</loc>
         <lastmod>2013-06-21T02:54:22-05:00</lastmod>
     </url>
     <url>
-        <loc>http://kae239.github.io/blog/archives/</loc>
+        <loc>http://carloscuba.com.pe/blog/archives/</loc>
         <lastmod>2013-06-21T02:54:22-05:00</lastmod>
     </url>
     <url>
-        <loc>http://kae239.github.io/</loc>
+        <loc>http://carloscuba.com.pe/</loc>
         <lastmod>2013-06-21T18:53:13-05:00</lastmod>
     </url>
     <url>
-        <loc>http://kae239.github.io/robots.txt</loc>
+        <loc>http://carloscuba.com.pe/robots.txt</loc>
         <lastmod>2013-06-20T01:11:42-05:00</lastmod>
     </url>
     <url>
-        <loc>http://kae239.github.io/rss/</loc>
+        <loc>http://carloscuba.com.pe/rss/</loc>
         <lastmod>2013-06-21T20:20:43-05:00</lastmod>
     </url>
     <url>
-        <loc>http://kae239.github.io/search.html</loc>
+        <loc>http://carloscuba.com.pe/search.html</loc>
         <lastmod>2013-06-21T20:51:47-05:00</lastmod>
     </url>
     <url>
-        <loc>http://kae239.github.io/tuts/</loc>
+        <loc>http://carloscuba.com.pe/tuts/</loc>
         <lastmod>2013-06-21T02:54:22-05:00</lastmod>
     </url>
 </urlset>
