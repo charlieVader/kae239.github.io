@@ -8,7 +8,7 @@ subtitle: "Un blog para la nueva generación de geeks."
 author: "Carlos Cuba"
 simple_search: http://google.com/search
 description: "Un blog lleno de Tecnología, Tutoriales e Historias para compartir."
-keywords: "blog, carlos cuba, octopress, tecnología, tutoriales, mac, ios"
+keywords: "carlos cuba, blog, trujillo, perú, blog de tecnología, how to, tecnología, tutoriales, mac, ios, octopress, github"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -21,6 +21,10 @@ subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email: ce.cuba@icloud.com
+
+#Tapirgo Searching
+tapir_token: 51c4f976986f5002000000c4
+
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -99,4 +103,7 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: true
-facebook_user: kae.cuba	
+facebook_user: kae.cuba
+
+# YouTube
+youtube_user: kae239
