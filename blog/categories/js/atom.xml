@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Carlos Cuba]]></title>
-  <link href="http://carloscuba.com.pe/atom.xml" rel="self"/>
+  <title><![CDATA[Category: JS | Carlos Cuba]]></title>
+  <link href="http://carloscuba.com.pe/blog/categories/js/atom.xml" rel="self"/>
   <link href="http://carloscuba.com.pe/"/>
   <updated>2013-06-23T23:08:18-05:00</updated>
   <id>http://carloscuba.com.pe/</id>
@@ -73,35 +73,6 @@
 <ol>
 <li id="fn:1">
 <p>Documentación Oficial y guía de implementación <a href="http://rafael.adm.br/css_browser_selector/">aquí</a><a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Primer Post!]]></title>
-    <link href="http://carloscuba.com.pe/blog/2013/06/20/hello-octopress-and-github-pages/"/>
-    <updated>2013-06-20T01:33:00-05:00</updated>
-    <id>http://carloscuba.com.pe/blog/2013/06/20/hello-octopress-and-github-pages</id>
-    <content type="html"><![CDATA[<p>Bienvenidos sean !!! … Hace unos días me encontré con una serie de páginas, videos y enlaces que me guiaban a un solo lugar: <a href="http://octopress.org" title="A blogging framework for hackers">Octopress</a>. Y desde ese momento, hasta hace unos minutos, que estuve reventándome las neuronas para poder publicar finalmente algo; el proceso no ha sido muy fácil, pero una vez que ya está <code>todo seteado</code> la experiencia de bloggear cambia por completo.</p>
-
-<!-- more -->
-
-
-<p>Muy pronto les tendré algunos post con <code>Tutoriales</code>, <code>Guías paso a paso</code>, <code>Noticias sobre Tecnología</code>, <code>Geek Stuff</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> y mucho más! …</p>
-
-<p>Espero que este blog sea el punto de partida para contactarme con muchas otras personas que compartan mis intereses, que me puedan dar ideas para nuevos posts y que me puedan enseñar más día tras día. <em>See you soon!</em></p>
-
-<br></br>
-
-
-
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p><em>Sí, esas cositas interesantes que tanto nos interesan a algunos.</em><a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 

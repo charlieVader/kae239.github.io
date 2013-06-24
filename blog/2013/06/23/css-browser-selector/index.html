@@ -3,10 +3,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Carlos Cuba</title>
+	<title>Selector de Navegador para CSS - Carlos Cuba</title>
     <meta name="author" content="Carlos Cuba">
     
-	<meta name="description" content="Jun 23rd, 2013 CSS, Coding, JS Mientras trataba de arreglar algunos detalles de mi recientemente creado y humilde blog, me encontré con esta &hellip;">
+	<meta name="description" content="Mientras trataba de arreglar algunos detalles de mi recientemente creado y humilde blog, me encontré con esta herramienta súper útil. ¿ Qué &hellip;">
 	<!--  -->
     
     <meta name="keywords" content="carlos cuba, blog, trujillo, perú, blog de tecnología, how to, tecnología, tutoriales, mac, ios, octopress, github">
@@ -117,103 +117,90 @@
 <div id="toload">
 <!-- begin toload --> 
     <div id="content" class="inner">
-        
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/06/23/css-browser-selector/">
-		
-			Selector De Navegador Para CSS</a>
-	</h2>
-    <div class="entry-content">
-    <div class="meta">
-      <div class="date"> 
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-23T14:02:00-05:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2013</time></div>
-      <div class="tags"> 
-
-
-	<a class='category' href='/blog/categories/css/'>CSS</a>, <a class='category' href='/blog/categories/coding/'>Coding</a>, <a class='category' href='/blog/categories/js/'>JS</a>
-
-
-</div>
-    </div>
-		<p>Mientras trataba de arreglar algunos detalles de mi recientemente creado y humilde blog, me encontré con esta herramienta súper útil.</p>
+        <article class="post">
+	<h2 class="title">Selector De Navegador Para CSS</h2>
+	<div class="entry-content"><p>Mientras trataba de arreglar algunos detalles de mi recientemente creado y humilde blog, me encontré con esta herramienta súper útil.</p>
 
 <blockquote><p>¿ Qué Programador / Diseñador Web no ha sufrido alguna vez una de esas malas pasadas de los <a href="http://coding.smashingmagazine.com/2010/06/07/the-principles-of-cross-browser-css-coding/">Cross-Browser</a> CSS ?</p></blockquote>
 
 <p>Pues bien, hoy les presento <code>CSS Browser Selector</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. Este pequeño <code>.js</code> nos va a sacar de apuros más de una vez en caso queramos aplicar <em>estilos definidos para cada navegador</em>, dependiendo del que este usando el usuario; incluso brinda la posibilidad de <strong>identificar el sistema operativo</strong> desde el que se está ejecutando el mismo, lo que nos permite asignar diferentes estilos según el navegador usado (<em>por cuestiones de compatibilidad, tal vez</em>) o, yendo un poco más allá, según el sistema operativo detectado.</p>
 
+<!-- more -->
 
-		
-		<a href="/blog/2013/06/23/css-browser-selector/" class="more-link">Seguir leyendo</a>
-	</div>
+
+<p>Su implementación es bastante sencilla: Primero debemos agregar la llamada al archivo desde la cabecera de nuestra <code>página HTML</code>; para ello, copiamos esta línea dentro de las etiquetas <code>&lt;head&gt;</code> y <code>&lt;/head&gt;</code>:</p>
+
+<pre><code>&lt;script src="ruta_del_archivo/css_browser_selector.js" type="text/javascript"&gt;  &lt;/script&gt;
+</code></pre>
+
+<p>Una vez hecho esto, sólo debemos empezar a usarla en nuestro diseño! … En mi caso, estoy usando este selector para aplicar una <strong>&ldquo;animación&rdquo;</strong> a los Links Sociales que se encuentran justo debajo de mi nombre.</p>
+
+<p>Si estás usando Chrome, podrás darte cuenta que si pasas el mouse sobre alguno de los íconos mencionados <code>( evento :hover)</code> aparece un pequeño círculo al rededor del mismo. Esto se logra de la siguiente manera:</p>
+
+<pre><code>.chrome #social-links li : hover {
+    …
+    CSS que se desea aplicar
+    …
+}
+</code></pre>
+
+<p><code>#social-links</code> es el <em>ID</em> del contenedor de los íconos, por lo que cada etiqueta <code>&lt;li&gt;</code> dentro del mismo (<em>donde están distribuidos los íconos</em>) sufrirá los cambios que se hayan establecido dentro de las llaves <code>{ }</code>.</p>
+
+<p>Ahora, la parte interesante (y donde radica la parte central de esta herramienta) está en que, <strong>sin necesidad de definir clases adicionales dentro de nuestras etiquetas</strong> (en HTML), CSS Browser Selector gestiona automáticamente el uso de dichos estilos sólo para el navegador establecido (en este caso <code>Chrome</code>) o, en caso se haya definido, algún Sistema Operativo en especial.</p>
+
+<p>Dicho esto, la sintaxis general sería la siguiente:</p>
+
+<pre><code>.[Código_de_OS].[Código_de_Navegador] [Selector] { 
+    ...
+} 
+
+-&gt; Sin espacio entre los Códigos de OS y Navegador
+</code></pre>
+
+<p>Y listo! … Podemos empezar a customizar nuestros diseños según navegadores y sistemas operativos!</p>
+
+<p>El link de descarga de, así como la documentación completa de este pequeño y efectivo .js, con ejemplos de aplicación y con la <strong><em>lista de Códigos de Navegadores y Sistemas Operativos disponibles</em></strong>, se encuentra en su <a href="http://rafael.adm.br/css_browser_selector/">web oficial</a>.</p>
+
+<p>No es lo último en aplicación de tecnología (ni la más actualizada tampoco) pero me pareció súper útil y además fácil de implementar, así que con esto me despido.</p>
+
+<p>Hasta pronto!</p>
+
+<br></br>
+
+
+
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Documentación Oficial y guía de implementación <a href="http://rafael.adm.br/css_browser_selector/">aquí</a><a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+</div>
 
 <div class="meta">
 	
 </div>
 </article>
 
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/06/20/hello-octopress-and-github-pages/">
-		
-			Primer Post!</a>
-	</h2>
-    <div class="entry-content">
-    <div class="meta">
-      <div class="date"> 
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-20T01:33:00-05:00" pubdate data-updated="true">Jun 20<span>th</span>, 2013</time></div>
-      <div class="tags"> 
-
-
-	<a class='category' href='/blog/categories/blog/'>Blog</a>, <a class='category' href='/blog/categories/octopress/'>Octopress</a>
-
-
-</div>
-    </div>
-		<p>Bienvenidos sean !!! … Hace unos días me encontré con una serie de páginas, videos y enlaces que me guiaban a un solo lugar: <a href="http://octopress.org" title="A blogging framework for hackers">Octopress</a>. Y desde ese momento, hasta hace unos minutos, que estuve reventándome las neuronas para poder publicar finalmente algo; el proceso no ha sido muy fácil, pero una vez que ya está <code>todo seteado</code> la experiencia de bloggear cambia por completo.</p>
-
-
-		
-		<a href="/blog/2013/06/20/hello-octopress-and-github-pages/" class="more-link">Seguir leyendo</a>
-	</div>
-
-<div class="meta">
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
 	
+	<a class="addthis_button_facebook_like" style="width: 120px;" fb:like:layout="button_count">
+		<div class="fb-like" data-href="" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false" data-font="lucida grande"></div>
+	</a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
-</article>
 
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Archivos del Blog</a></div>
-</nav>
+
 
     </div>
     <footer id="footer">

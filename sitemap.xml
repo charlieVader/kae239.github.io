@@ -1,37 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>
-            http://carloscuba.com.pe/index/blog/2013/06/20/hello-octopress-and-github-pages/
-        </loc>
+        <loc>http://carloscuba.com.pe/blog/2013/06/20/hello-octopress-and-github-pages/</loc>
         <lastmod>2013-06-21T02:54:22-05:00</lastmod>
     </url>
     <url>
-        <loc>http://carloscuba.com.pe/index/about/</loc>
+        <loc>http://carloscuba.com.pe/blog/2013/06/23/css-browser-selector/</loc>
+        <lastmod>2013-06-23T22:49:09-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://carloscuba.com.pe/about/</loc>
         <lastmod>2013-06-21T02:54:22-05:00</lastmod>
     </url>
     <url>
-        <loc>http://carloscuba.com.pe/index/blog/archives/</loc>
-        <lastmod>2013-06-21T02:54:22-05:00</lastmod>
+        <loc>http://carloscuba.com.pe/blog/archives/</loc>
+        <lastmod>2013-06-23T22:49:09-05:00</lastmod>
     </url>
     <url>
-        <loc>http://carloscuba.com.pe/index/</loc>
-        <lastmod>2013-06-21T18:53:13-05:00</lastmod>
+        <loc>http://carloscuba.com.pe/</loc>
+        <lastmod>2013-06-23T22:49:09-05:00</lastmod>
     </url>
     <url>
-        <loc>http://carloscuba.com.pe/index/robots.txt</loc>
+        <loc>http://carloscuba.com.pe/robots.txt</loc>
         <lastmod>2013-06-20T01:11:42-05:00</lastmod>
     </url>
     <url>
-        <loc>http://carloscuba.com.pe/index/rss/</loc>
+        <loc>http://carloscuba.com.pe/rss/</loc>
         <lastmod>2013-06-21T20:20:43-05:00</lastmod>
     </url>
     <url>
-        <loc>http://carloscuba.com.pe/index/search.html</loc>
+        <loc>http://carloscuba.com.pe/search.html</loc>
         <lastmod>2013-06-21T20:51:47-05:00</lastmod>
     </url>
     <url>
-        <loc>http://carloscuba.com.pe/index/tuts/</loc>
+        <loc>http://carloscuba.com.pe/tuts/</loc>
         <lastmod>2013-06-21T02:54:22-05:00</lastmod>
     </url>
 </urlset>

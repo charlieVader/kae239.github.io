@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://carloscuba.com.pe/index/sitemap.xml 
+Sitemap: http://carloscuba.com.pe/sitemap.xml 
