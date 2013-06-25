@@ -12,5 +12,6 @@ $(document).ready(function() {
 	$('head').prepend(metaImg);
 
 	var metaDescContent = $('#descMeta').html();
-	$('meta[name=description]').attr("content", metaDescContent);
+	var metaDesc = '<meta property="og:description" content="'+ metaDescContent +'" />'
+	$('head').prepend(metaDesc);
 });
