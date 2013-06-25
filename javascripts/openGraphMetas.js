@@ -12,4 +12,5 @@ $(document).ready(function() {
 	var metaDescContent = $('#descMeta').html();
 	var metaDesc = '<meta property="og:description" content="'+ metaDescContent +'" />'
 	$('head').prepend(metaImg);
+	$('head').prepend(metaDesc);
 });
