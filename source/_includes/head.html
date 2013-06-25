@@ -4,9 +4,14 @@
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="author" content="{{ site.author }}">
-    {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
-	<meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
-	<!-- {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %} -->
+    
+    {% capture desc_meta %}
+        {% if page.desc_meta %}{{ page.desc_meta }}{% else %}{{ content | raw_content }}{% endif %}
+    {% endcapture %}
+	<meta property="og:description" content="{{ desc_meta | strip_html | condense_spaces | truncate:150 }}">
+	
+    <!-- {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %} -->
+    
     {% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% elsif site.keywords %}{{ site.keywords }}{% endif %}{% endcapture %}
     <meta name="keywords" content="{{ keywords }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

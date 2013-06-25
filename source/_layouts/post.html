@@ -3,7 +3,15 @@ layout: default
 single: true
 ---
 
-<article class="post">{% include article.html %}</article>
+<article class="post">
+	{% if page.image_meta %}
+		<div id="imageMeta" style="display: none;">{{ page.image_meta }}</div>
+	{% endif %}
+	{% if page.desc_meta %}
+		<div id="descMeta" style="display: none;">{{ page.desc_meta }}</div>
+	{% endif %}
+	{% include article.html %}
+</article>
 {% unless page.sharing == false %}
 	{% include post/sharing.html %}
 {% endunless %}

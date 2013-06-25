@@ -1,3 +1,13 @@
+/*
+@Author: Carlos Cuba
+Date: June 24, 2013
+
+Description: This .js centers the images you've added to your post via markdown 
+(it automatically set the alignment of all your images to the left.)
+Also, it hides the Caption (title of the image).
+
+*/
+
 $(document).ready(function() {
 	
 	// Search for all the elements 'img' inside of an 'a' tag inside of a 'p' tag

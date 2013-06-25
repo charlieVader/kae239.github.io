@@ -3,6 +3,8 @@ layout: post
 title: "Selector de Navegador para CSS"
 date: 2013-06-23 14:02
 comments: true
+image_meta: https://lh5.googleusercontent.com/-PXp6Yj0_Gbc/Uciw-jPWuAI/AAAAAAAAAE0/M8woHz0ZL98/s800/browsers-css.jpg
+desc_meta: Una forma fácil de enfrentar problemas en la visualización de tus estilos e incluso algunas de tus funcionalidades por distintos navegadores web.
 categories: [Coding, CSS, JS]
 ---
 
