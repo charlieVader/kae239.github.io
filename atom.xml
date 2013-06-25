@@ -4,7 +4,7 @@
   <title><![CDATA[Carlos Cuba]]></title>
   <link href="http://carloscuba.com.pe/atom.xml" rel="self"/>
   <link href="http://carloscuba.com.pe/"/>
-  <updated>2013-06-25T00:23:21-05:00</updated>
+  <updated>2013-06-25T15:47:27-05:00</updated>
   <id>http://carloscuba.com.pe/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Selector de Navegador para CSS]]></title>
-    <link href="http://carloscuba.com.pe/blog/2013/06/23/css-browser-selector/"/>
+    <link href="http://carloscuba.com.pe/blog/2013/06/23/selector-navegador-css/"/>
     <updated>2013-06-23T14:02:00-05:00</updated>
-    <id>http://carloscuba.com.pe/blog/2013/06/23/css-browser-selector</id>
+    <id>http://carloscuba.com.pe/blog/2013/06/23/selector-navegador-css</id>
     <content type="html"><![CDATA[<p>Mientras trataba de arreglar algunos detalles de mi recientemente creado y humilde blog, me encontré con esta herramienta súper útil.</p>
 
 <blockquote><p>¿ Qué Programador / Diseñador Web no ha sufrido alguna vez una de esas malas pasadas de los <a href="http://coding.smashingmagazine.com/2010/06/07/the-principles-of-cross-browser-css-coding/">Cross-Browser</a> CSS ?</p></blockquote>
@@ -83,9 +83,9 @@
   
   <entry>
     <title type="html"><![CDATA[Primer Post!]]></title>
-    <link href="http://carloscuba.com.pe/blog/2013/06/20/hello-octopress-and-github-pages/"/>
+    <link href="http://carloscuba.com.pe/blog/2013/06/20/primer-post/"/>
     <updated>2013-06-20T01:33:00-05:00</updated>
-    <id>http://carloscuba.com.pe/blog/2013/06/20/hello-octopress-and-github-pages</id>
+    <id>http://carloscuba.com.pe/blog/2013/06/20/primer-post</id>
     <content type="html"><![CDATA[<p>Bienvenidos sean !!! … Hace unos días me encontré con una serie de páginas, videos y enlaces que me guiaban a un solo lugar: <a href="http://octopress.org" title="A blogging framework for hackers">Octopress</a>. Y desde ese momento, hasta hace unos minutos, que estuve reventándome las neuronas para poder publicar finalmente algo; el proceso no ha sido muy fácil, pero una vez que ya está <code>todo seteado</code> la experiencia de bloggear cambia por completo.</p>
 
 <!-- more -->

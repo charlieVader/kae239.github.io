@@ -3,16 +3,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Selector de Navegador para CSS - Carlos Cuba</title>
+	<title>Primer Post! - Carlos Cuba</title>
     <meta name="author" content="Carlos Cuba">
     
     
-	<meta property="og:description" content=" Una forma fácil de enfrentar problemas en la visualización de tus estilos e incluso algunas de tus funcionalidades por distintos navegadores web. ">
+	<meta property="og:description" content="Bienvenidos sean !!! … Hace unos días me encontré con una serie de páginas, videos y enlaces que me guiaban a un solo lugar: Octopress. Y desde ese &hellip;">
 	
     <!--  -->
     
     
-    <meta name="keywords" content="carloscuba.com.pe, Carlos Eduardo Cuba Miano, blog, trujillo, perú, tecnología, tutoriales, desarrollo, web development, mac, ios, octopress, github">
+    <meta name="keywords" content="www.carloscuba.com.pe, carlos, eduardo, cuba, miano, blog, trujillo, perú, tecnología, tutoriales, programación, web, deseño, web development, mac, ios, octopress, github">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link href="/atom.xml" rel="alternate" title="Carlos Cuba" type="application/atom+xml">
@@ -136,60 +136,17 @@
     <div id="content" class="inner">
         <article class="post">
 	
-		<div id="imageMeta" style="display: none;">https://lh5.googleusercontent.com/-PXp6Yj0_Gbc/Uciw-jPWuAI/AAAAAAAAAE0/M8woHz0ZL98/s800/browsers-css.jpg</div>
 	
 	
-		<div id="descMeta" style="display: none;">Una forma fácil de enfrentar problemas en la visualización de tus estilos e incluso algunas de tus funcionalidades por distintos navegadores web.</div>
-	
-	
-	<h2 class="title">Selector De Navegador Para CSS</h2>
-	<div class="entry-content"><p>Mientras trataba de arreglar algunos detalles de mi recientemente creado y humilde blog, me encontré con esta herramienta súper útil.</p>
-
-<blockquote><p>¿ Qué Programador / Diseñador Web no ha sufrido alguna vez una de esas malas pasadas de los <a href="http://coding.smashingmagazine.com/2010/06/07/the-principles-of-cross-browser-css-coding/">Cross-Browser</a> CSS ?</p></blockquote>
-
-<p>Pues bien, hoy les presento <code>CSS Browser Selector</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>. Este pequeño <code>.js</code> nos va a sacar de apuros más de una vez en caso queramos aplicar <em>estilos definidos para cada navegador</em>, dependiendo del que este usando el usuario; incluso brinda la posibilidad de <strong>identificar el sistema operativo</strong> desde el que se está ejecutando el mismo, lo que nos permite asignar diferentes estilos según el navegador usado (<em>por cuestiones de compatibilidad, tal vez</em>) o, yendo un poco más allá, según el sistema operativo detectado.</p>
+	<h2 class="title">Primer Post!</h2>
+	<div class="entry-content"><p>Bienvenidos sean !!! … Hace unos días me encontré con una serie de páginas, videos y enlaces que me guiaban a un solo lugar: <a href="http://octopress.org" title="A blogging framework for hackers">Octopress</a>. Y desde ese momento, hasta hace unos minutos, que estuve reventándome las neuronas para poder publicar finalmente algo; el proceso no ha sido muy fácil, pero una vez que ya está <code>todo seteado</code> la experiencia de bloggear cambia por completo.</p>
 
 <!-- more -->
 
 
-<p><img src="https://lh5.googleusercontent.com/-PXp6Yj0_Gbc/Uciw-jPWuAI/AAAAAAAAAE0/M8woHz0ZL98/s800/browsers-css.jpg" alt="CSS Cross Browser" /></p>
+<p>Muy pronto les tendré algunos post con <code>Tutoriales</code>, <code>Guías paso a paso</code>, <code>Noticias sobre Tecnología</code>, <code>Geek Stuff</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> y mucho más! …</p>
 
-<p>Su implementación es bastante sencilla: Primero debemos agregar la llamada al archivo desde la cabecera de nuestra <code>página HTML</code>; para ello, copiamos esta línea dentro de las etiquetas <code>&lt;head&gt;</code> y <code>&lt;/head&gt;</code>:</p>
-
-<pre><code>&lt;script src="ruta_del_archivo/css_browser_selector.js" type="text/javascript"&gt;  &lt;/script&gt;
-</code></pre>
-
-<p>Una vez hecho esto, sólo debemos empezar a usarla en nuestro diseño! … En mi caso, estoy usando este selector para aplicar una <strong>&ldquo;animación&rdquo;</strong> a los Links Sociales que se encuentran justo debajo de mi nombre.</p>
-
-<p>Si estás usando Chrome, podrás darte cuenta que si pasas el mouse sobre alguno de los íconos mencionados <code>( evento :hover)</code> aparece un pequeño círculo al rededor del mismo. Esto se logra de la siguiente manera:</p>
-
-<pre><code>.chrome #social-links li : hover {
-    …
-    CSS que se desea aplicar
-    …
-}
-</code></pre>
-
-<p><code>#social-links</code> es el <em>ID</em> del contenedor de los íconos, por lo que cada etiqueta <code>&lt;li&gt;</code> dentro del mismo (<em>donde están distribuidos los íconos</em>) sufrirá los cambios que se hayan establecido dentro de las llaves <code>{ }</code>.</p>
-
-<p>Ahora, la parte interesante (y donde radica la parte central de esta herramienta) está en que, <strong>sin necesidad de definir clases adicionales dentro de nuestras etiquetas</strong> (en HTML), CSS Browser Selector gestiona automáticamente el uso de dichos estilos sólo para el navegador establecido (en este caso <code>Chrome</code>) o, en caso se haya definido, algún Sistema Operativo en especial.</p>
-
-<p>Dicho esto, la sintaxis general sería la siguiente:</p>
-
-<pre><code>.[Código_de_OS].[Código_de_Navegador] [Selector] { 
-    ...
-} 
-
--&gt; Sin espacio entre los Códigos de OS y Navegador
-</code></pre>
-
-<p>Y listo! … Podemos empezar a customizar nuestros diseños según navegadores y sistemas operativos!</p>
-
-<p>El link de descarga de, así como la documentación completa de este pequeño y efectivo .js, con ejemplos de aplicación y con la <strong><em>lista de Códigos de Navegadores y Sistemas Operativos disponibles</em></strong>, se encuentra en su <a href="http://rafael.adm.br/css_browser_selector/">web oficial</a>.</p>
-
-<p>No es lo último en aplicación de tecnología (ni la más actualizada tampoco) pero me pareció súper útil y además fácil de implementar, así que con esto me despido.</p>
-
-<p>Hasta pronto!</p>
+<p>Espero que este blog sea el punto de partida para contactarme con muchas otras personas que compartan mis intereses, que me puedan dar ideas para nuevos posts y que me puedan enseñar más día tras día. <em>See you soon!</em></p>
 
 <br></br>
 
@@ -199,7 +156,7 @@
 <hr/>
 <ol>
 <li id="fn:1">
-<p>Documentación Oficial y guía de implementación <a href="http://rafael.adm.br/css_browser_selector/">aquí</a><a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<p><em>Sí, esas cositas interesantes que tanto nos interesan a algunos.</em><a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
 </ol>
 </div>
 
@@ -261,8 +218,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://carloscuba.com.pe/blog/2013/06/23/css-browser-selector/';
-        var disqus_url = 'http://carloscuba.com.pe/blog/2013/06/23/css-browser-selector/';
+        var disqus_identifier = 'http://carloscuba.com.pe/blog/2013/06/20/primer-post/';
+        var disqus_url = 'http://carloscuba.com.pe/blog/2013/06/20/primer-post/';
         var disqus_script = 'embed.js';
       
     (function () {
