@@ -14,6 +14,8 @@ Pues bien, hoy les presento `CSS Browser Selector`[^1]. Este pequeño `.js` nos 
 
 <!-- more -->
 
+![CSS Cross Browser](https://lh5.googleusercontent.com/-PXp6Yj0_Gbc/Uciw-jPWuAI/AAAAAAAAAE0/M8woHz0ZL98/s800/browsers-css.jpg) 
+
 Su implementación es bastante sencilla: Primero debemos agregar la llamada al archivo desde la cabecera de nuestra `página HTML`; para ello, copiamos esta línea dentro de las etiquetas `<head>` y `</head>`:
 
 	<script src="ruta_del_archivo/css_browser_selector.js" type="text/javascript">	</script>
