@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Coding | Carlos Cuba]]></title>
   <link href="http://carloscuba.com.pe/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://carloscuba.com.pe/"/>
-  <updated>2013-06-23T23:08:18-05:00</updated>
+  <updated>2013-06-24T19:48:53-05:00</updated>
   <id>http://carloscuba.com.pe/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
@@ -26,6 +26,8 @@
 
 <!-- more -->
 
+
+<p><img src="https://lh5.googleusercontent.com/-PXp6Yj0_Gbc/Uciw-jPWuAI/AAAAAAAAAE0/M8woHz0ZL98/s800/browsers-css.jpg" alt="CSS Cross Browser" /></p>
 
 <p>Su implementación es bastante sencilla: Primero debemos agregar la llamada al archivo desde la cabecera de nuestra <code>página HTML</code>; para ello, copiamos esta línea dentro de las etiquetas <code>&lt;head&gt;</code> y <code>&lt;/head&gt;</code>:</p>
 
