@@ -5,5 +5,6 @@ Disallow: /sitemap.xml
 Disallow: /images/
 Disallow: /javascripts/
 Disallow: /stylesheets/
+Disallow: /blog/categories/
 
 Sitemap: http://carloscuba.com.pe/sitemap.xml 
