@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Coding | Carlos Cuba]]></title>
   <link href="http://carloscuba.com.pe/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://carloscuba.com.pe/"/>
-  <updated>2013-06-25T15:47:27-05:00</updated>
+  <updated>2013-06-26T19:25:46-05:00</updated>
   <id>http://carloscuba.com.pe/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Selector de Navegador para CSS]]></title>
-    <link href="http://carloscuba.com.pe/blog/2013/06/23/selector-navegador-css/"/>
+    <link href="http://carloscuba.com.pe/blog/2013/06/23/css-browser-selector/"/>
     <updated>2013-06-23T14:02:00-05:00</updated>
-    <id>http://carloscuba.com.pe/blog/2013/06/23/selector-navegador-css</id>
+    <id>http://carloscuba.com.pe/blog/2013/06/23/css-browser-selector</id>
     <content type="html"><![CDATA[<p>Mientras trataba de arreglar algunos detalles de mi recientemente creado y humilde blog, me encontré con esta herramienta súper útil.</p>
 
 <blockquote><p>¿ Qué Programador / Diseñador Web no ha sufrido alguna vez una de esas malas pasadas de los <a href="http://coding.smashingmagazine.com/2010/06/07/the-principles-of-cross-browser-css-coding/">Cross-Browser</a> CSS ?</p></blockquote>
