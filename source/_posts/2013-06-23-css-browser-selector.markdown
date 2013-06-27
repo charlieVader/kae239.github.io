@@ -8,7 +8,7 @@ image_meta: https://lh5.googleusercontent.com/-PXp6Yj0_Gbc/Uciw-jPWuAI/AAAAAAAAA
 
 desc_meta: Una forma fácil de enfrentar problemas en la visualización de tus estilos e incluso algunas de tus funcionalidades por distintos navegadores web.
 
-key_meta: selector, navegador, css, javascript, cross, browsing
+keywords: selector, navegador, css, javascript, cross, browsing
 
 categories: [Coding, CSS, JS]
 ---

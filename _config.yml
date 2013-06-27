@@ -8,7 +8,7 @@ subtitle: "Un blog para la nueva generación de geeks."
 author: "Carlos Cuba"
 simple_search: http://google.com/search
 description: "Un blog lleno de Tecnología, Tutoriales e Historias para compartir."
-keywords: "carloscuba.com.pe, Carlos Eduardo Cuba Miano, blog, trujillo, perú, tecnología, tutoriales, desarrollo, web development, mac, ios, octopress, github"
+keywords: "www.carloscuba.com.pe, carlos, eduardo, cuba, miano, blog, trujillo, perú, tecnología, tutoriales, programación, web, deseño, web development, mac, ios, octopress, github"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -99,7 +99,7 @@ disqus_short_name: carloscuba
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-41988657-1
 
 # Facebook Like
 facebook_like: true
