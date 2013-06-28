@@ -7,7 +7,7 @@ title: "Carlos Cuba"
 subtitle: "Un blog para la nueva generación de geeks."
 author: "Carlos Cuba"
 simple_search: http://google.com/search
-description: "Un blog lleno de Tecnología, Tutoriales e Historias para compartir."
+description: "Blog sobre Tutoriales, Guías, Tips y mucho más sobre Tecnología, Programación, Diseño Web, Aplicaciones Móviles y otros temas bastante interesantes!"
 keywords: "www.carloscuba.com.pe, carlos, eduardo, cuba, miano, blog, trujillo, perú, tecnología, tutoriales, programación, web, deseño, web development, mac, ios, octopress, github"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -32,7 +32,7 @@ tapir_token: 51c4f976986f5002000000c4
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:title/
 source: source
 destination: public
 plugins: plugins

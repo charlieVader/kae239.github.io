@@ -3,12 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
     <meta name="author" content="{{ site.author }}">
     
-    {% capture desc_meta %}
-        {% if page.desc_meta %}{{ page.desc_meta }}{% else %}{{ content | raw_content }}{% endif %}
-    {% endcapture %}
-	<meta property="og:description" content="{{ desc_meta | strip_html | condense_spaces | truncate:150 }}">
+    {% if page.desc_meta%}
+        {% capture desc_meta %}
+            {% if page.desc_meta %}
+                {{ page.desc_meta }}
+            {% else %}
+                {{ content | raw_content }}
+            {% endif %}
+        {% endcapture %}
+    	<meta property="og:description" content="{{ desc_meta | strip_html | condense_spaces | truncate:150 }}">
+    {% else %}
+        {% if site.description %}
+            <meta property="og:description" content="{{ site.description }}">
+            {{ description}}
+        {% else %} {{ content | raw_content }}
+        {% endif %} 
+        
+    {% endif %}
 	
     <!-- {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %} -->
     
@@ -18,7 +32,8 @@
 
 	<link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
 	<link rel="canonical" href="{{ canonical }}">
-	<link href="{{ root_url }}/favicon.ico" rel="shortcut icon">
+	<!-- <link rel="shortcut icon" href="{{ root_url }}/fav32.ico"> -->
+    <link rel="shortcut icon" href="https://lh4.googleusercontent.com/-73lGR68HRkw/Uc3g3LgSoFI/AAAAAAAAAJQ/Sx1ACpRaIt4/s800/fav32.jpg">
     <link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
     <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
