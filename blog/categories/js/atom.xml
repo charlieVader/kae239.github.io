@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JS | Carlos Cuba]]></title>
   <link href="http://carloscuba.com.pe/blog/categories/js/atom.xml" rel="self"/>
   <link href="http://carloscuba.com.pe/"/>
-  <updated>2013-06-28T18:48:13-05:00</updated>
+  <updated>2013-06-28T22:19:18-05:00</updated>
   <id>http://carloscuba.com.pe/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
@@ -12,6 +12,120 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cómo agregar un Mapa a mi Página Web]]></title>
+    <link href="http://carloscuba.com.pe/blog/2013/06/como-agregar-un-mapa-a-mi-web/"/>
+    <updated>2013-06-28T10:16:00-05:00</updated>
+    <id>http://carloscuba.com.pe/blog/2013/06/como-agregar-un-mapa-a-mi-web</id>
+    <content type="html"><![CDATA[<p><iframe 
+	height="400px" 
+	width="100%" 
+	frameborder="0" 
+	scrolling="no" 
+	src="/assets/google_maps.html">
+ </iframe></p>
+
+<p>¿Quién no ha visto este tipo de recurso en alguna página web? Lo cierto es que un <code>Mapa</code> es una herramienta sumamente útil tanto para Usuarios como para <code>Diseñadores / Programadores</code> de <code>Páginas / Aplicaciones Web</code>.</p>
+
+<p>En este post aprenderemos cómo incluir, de manera sencilla, un mapa (soportado <code>Google Maps</code>, por supuesto) en cualquier parte de la página o aplicación web en la que estemos trabajando.</p>
+
+<!-- more -->
+
+
+<p>Para empezar, debemos entender que nuestro mapa se tendrá que cargar en un contenedor (&ldquo;<code>div</code>&rdquo; &ndash; para ser más exactos), el cual podrá estar en cualquier parte de nuestra página y tendrá las dimensiones que queramos; para este ejemplo se está utilizando una altura de 400 pixels (<code>height:400px;</code>) y todo el ancho posible permitido (<code>width:100%;</code>), por lo que nuestra página inicialmente lucirá más o menos de la siguiente manera:</p>
+
+<p>```
+&lt;!DOCTYPE html>
+<html>
+  <head></p>
+
+<pre><code>&lt;meta name="viewport" content="initial-scale=1.0, user-scalable=no"&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;style&gt;
+  #contenedor-mapa {
+  background-color:#999;
+  margin: 0; padding: 0;
+  height: 400px; width:100%;
+}
+&lt;/style&gt;
+</code></pre>
+
+<p>  </head>
+  <body></p>
+
+<pre><code>&lt;div id="contenedor-mapa"&gt;&lt;/div&gt;
+</code></pre>
+
+<p>  </body>
+</html>
+```</p>
+
+<p>Lo que tenemos hasta aquí, es un contenedor llamado <code>contenedor-mapa</code> que, como es de esperarse, contendrá nuestro mapa. En la cabecera de la página hemos establecido algunos <code>estilos</code> (bastante básicos) para poder observar -si es que cargamos la página tal y como está- que ya tenemos el contenedor creado (de color gris <code>#999</code>) esperando por mostrar las imágenes de Google Maps.</p>
+
+<p>Una vez hecho esto vamos a emplear la magia del <code>JavaScript (JS)</code> para llamar la librería responsable por el completo funcionamiento de nuestro mapa. Para ello, justo después de la etiqueta <code>&lt;/style&gt;</code> agregaremos lo siguiente:</p>
+
+<pre><code>&lt;script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Con esta línea estamos invocando al <a href="http://es.wikipedia.org/wiki/Interfaz_de_programaci%C3%B3n_de_aplicaciones">API</a> de Google para el uso de los Mapas (<code>Versión 3, por si acaso</code>&ndash; en otro post veremos más a detalle los parámetros de invocación) y quedamos listos para explotar todo su potencial. Justo a continuación, agregamos nuevamente una etiqueta <code>&lt;script&gt;</code> que contendrá los <strong>parámetros de inicio</strong><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> del mapa que mostraremos:</p>
+
+<p>```</p>
+
+<script> 
+  var mapa;
+  function iniciarMapa() {
+    var parametrosInicio = {
+      zoom: 12,
+      center: new google.maps.LatLng(-8.1119444444444,  -79.028888888889),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+  mapa = new google.maps.Map(document.getElementById('contenedor-mapa'), parametrosInicio);
+  }
+  google.maps.event.addDomListener(window, 'load', iniciarMapa);
+</script>
+
+
+<p>```</p>
+
+<p> Lo que estamos haciendo aquí es lo siguiente:</p>
+
+<ul>
+<li><p>Creamos una variable <code>mapa</code>, la cual contendrá todas las opciones que nos permitirán manejar la visualización y la funcioncionalidad del mapa que mostraremos.</p></li>
+<li><p>Creamos una función <code>iniciarMapa()</code>:</p>
+
+<ul>
+<li><p>Esta ejecutará una vez que la página este lista para cargarse; dentro de esta función definimos nuestra variable <code>parametrosInicio</code>, que incluirá las siguientes <em>opciones básicas (requeridas)</em>:</p>
+
+<ul>
+<li><p> <code>zoom</code>: El nivel inicial de Zoom que presentará el mapa.</p></li>
+<li><p><code>center</code>: El Punto Central que se mostrará en el mapa. Este punto está dado por una variable de tipo <a href="https://developers.google.com/maps/documentation/javascript/reference?hl=es#LatLng"><strong>LatLng</strong></a> definido por el propio Google para establecer las <strong><a href="https://support.google.com/maps/answer/2533464?hl=es">coordenadas</a> centrales iniciales</strong> de acuerdo a las cuales mostraremos nuestro mapa. (Para obtener las coordendas de cualquier punto en <code>nuestro planeta</code>, podemos utilizar <a href="http://www.agenciacreativa.net/coordenadas_google_maps.php">esta simple web</a>). En esta variable, el primer parámetro es la Latitud y el siguiente la Longitud del punto deseado.</p></li>
+<li><p><code>mapTypeId</code>: El Tipo de Mapa que deseamos mostrar inicialmente (puede ser ROADMAP, HYBRID, SATELLITE, TERRAIN). Pueden encontrar una definición más amplia de cada tipo de mapa <a href="https://developers.google.com/maps/documentation/javascript/maptypes?hl=es">aquí</a>.</p></li>
+</ul>
+</li>
+<li><p>Lo siguiente es asignar a nuestra variable <code>mapa</code> el objeto definido por el tipo de variable <a href="https://developers.google.com/maps/documentation/javascript/reference?hl=es#Map">google.maps.Map</a>, al cual le pasamos como parámetros el contenedor (<code>div</code> -ya que dentro de este mostraremos el mapa-) que creamos inicialmente en nuestra web, así como la variable <code>parametrosInicio</code>.</p></li>
+</ul>
+</li>
+<li><p>Una vez hecho esto, agregaremos la llamada a nuestra función <code>iniciarMapa</code> agregando como trigger el evento <strong>&lsquo;load&rsquo;</strong> al DOM de nuestra página (para simplificar las cosas: <strong>cuando nuestra página este lista para ser mostrada -ya cargada- se ejecutará la función indicada</strong>).</p></li>
+</ul>
+
+
+<p>Y listo !!! … Podemos empezar a personalizar nuestro mapa para mostar los lugares que queramos, empleando el tipo de mapa que deseemos y con el zoom que nosotros elijamos.</p>
+
+<p><em>PD: En un próximo post veremos cómo agregar <code>marcadores</code> a nuestro mapa, de tal forma que podamos mostrar uno o varios lugares específicos y con la posibilidad de generar un poco más de interactividad entre el usuario y nuestra web.</em></p>
+
+<br><br/>
+
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>La documentación completa sobre los parámetros de inicio se haya <a href="https://developers.google.com/maps/documentation/javascript/reference?hl=es#MapOptions">aquí.</a><a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Selector de Navegador para CSS]]></title>
