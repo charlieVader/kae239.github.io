@@ -18,6 +18,8 @@
     {% else %}
         {% if site.description %}
             <meta property="og:description" content="{{ site.description }}">
+            <meta property="og:image" content="http://carloscuba.com.pe/images/ccLogoImage.png">
+            <!-- <meta property="og:image" content="https://lh6.googleusercontent.com/-0s5iVaRne5g/Uc3nV8H1ZuI/AAAAAAAAAJg/AqK9uGTZka4/s800/iThinkDifferent.jpg"> -->
             {{ description}}
         {% else %} {{ content | raw_content }}
         {% endif %} 
