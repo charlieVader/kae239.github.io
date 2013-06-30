@@ -7,6 +7,7 @@ Description:
 */
 
 $(document).ready(function() {
+	alert('openGraphMetas.js');
 	var metaImgContent = '';
 	if ($('#imageMeta').text() != '') {
 		metaImgContent = $('#imageMeta').text().replace('"','');
