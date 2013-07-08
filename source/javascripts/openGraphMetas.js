@@ -7,9 +7,10 @@ Description:
 */
 
 $(document).ready(function() {
+	alert('openGraphMetas.js');
 	var metaImgContent = '';
 	if ($('#imageMeta').text() != '') {
-		$('#imageMeta').html().replace('"','');
+		metaImgContent = $('#imageMeta').text().replace('"','');
 		var metaImg = '<meta property="og:image" content="'+ metaImgContent +'" />'
 		$('head').prepend(metaImg);
 	}

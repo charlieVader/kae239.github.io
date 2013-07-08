@@ -4,9 +4,9 @@ title: "Cómo agregar un Mapa a mi Página Web"
 date: 2013-06-28 10:16
 comments: true
 
-desc_meta: Una forma fácil de implementar esta útil y gratuita herramienta proporcionada por Google. Podemos mostrar mapas en cualquier parte de nuestra web, así como personalizarlo para establecer niveles de zoom, distintas vistas y el punto central que queramos! Empecemos!!!
-
 image_meta: https://lh3.googleusercontent.com/-2jkiOtOlMcM/Uc5RGL1kFcI/AAAAAAAAAJw/5i1n_PWSBFg/s144/google-maps-icon.png
+
+desc_meta: Una forma fácil de implementar esta útil y gratuita herramienta proporcionada por Google en nuestra propia web. 
 
 keywords: google maps, cómo, agregar, mapa, web, javascript, js
 

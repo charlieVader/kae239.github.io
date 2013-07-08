@@ -4,7 +4,6 @@ layout: nil
 User-agent: *
 Disallow: /search.html
 Disallow: /robots.txt
-Disallow: /sitemap.xml
 Disallow: /images/
 Disallow: /javascripts/
 Disallow: /stylesheets/
