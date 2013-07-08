@@ -3,7 +3,7 @@
 Date: June 24, 2013
 
 Description: This .js centers the images you've added to your post via markdown 
-(it automatically set the alignment of all your images to the left.)
+(it automatically sets the alignment of all your images to the left.)
 Also, it hides the Caption (title of the image).
 
 */
@@ -21,5 +21,5 @@ $(document).ready(function() {
 
 		var spanCaption = $(this).parent().next('span.caption'); // span tag containing the Caption for the Image
 		$(spanCaption).css('display', 'none');
-	});
+	});	
 });

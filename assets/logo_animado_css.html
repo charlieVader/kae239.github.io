@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Lily+Script+One);
+		@import url(http://fonts.googleapis.com/css?family=Lobster);
+		
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Lily Script One', cursive;
+			-webkit-font-smoothing: subpixel-antialiased;
+			color: #007bb7;
+			text-decoration: none;
+		}
+
+		body { background: #fbfbfb; }
+		
+		h1 {
+			font-size: 2em;
+			text-align: center;
+			margin-top: 30px;
+			text-shadow: -2px 2px 0px rgba(0,0,0,0.1);
+		}
+		
+		.container {
+			margin: 40px auto;
+			width: 300px;
+			border: 0px solid #FBFBFB;
+		}
+		
+		.container:after {
+			content: 'sólo CSS';
+			font-family: 'Lobster', cursive;
+			font-size: 3em;
+			text-align: center;
+			position: absolute;
+			height: 40px;
+			width: 300px;
+			margin: -90px 0 0 0;
+			color: #fbfbfb;
+		}	
+		
+		.a, .b, .c, .d, .e, .f {
+			position: relative;
+			background: #fcbd10;
+			height: 20px;
+			width: 84px;
+			box-shadow: -3px 4px 0px 0px rgba(0,0,0,0.1);
+			
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
+		
+		.a { border-radius: 15px 0px 0px 0px; }
+		
+		.b { background: #f17722; width: 61px; }
+		
+		.c { background: #d71c23; width: 70px; }
+		
+		.d { background: #7f2980; width: 56px; }
+		
+		.e { background: #007bb7; width: 90px; }
+		
+		.f { background: #3cabe0; width: 80px; border-radius: 0 0 0 15px; }
+		
+		.container:hover > .a,
+		.container:hover > .b,
+		.container:hover > .c,
+		.container:hover > .d,
+		.container:hover > .e,
+		.container:hover > .f {
+			width: 300px;
+		}
+		
+		.container:hover > .a { border-radius: 15px 15px 0 0; }
+		
+		.container:hover > .f {	border-radius: 0 0 15px 15px; }
+		
+	</style>
+	</head>
+	<body>
+		<h1>Hover Effect</h1>
+		<div class="container">
+			<div class="a"></div>
+			<div class="b"></div>
+			<div class="c"></div>
+			<div class="d"></div>
+			<div class="e"></div>
+			<div class="f"></div>
+		</div>
+	</body>
+</html>

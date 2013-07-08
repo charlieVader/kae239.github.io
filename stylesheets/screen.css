@@ -69,5 +69,13 @@ article pre code{background:none;border:none;padding:0;margin:0;-webkit-border-r
 	margin-right: auto !important;
 }
 
+.centeredIframe {
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-bottom: 12px;
+	padding-bottom: 15px;
+}
+
 article .entry-content p { padding-bottom: 15px; }
 article .entry-content blockquote p {padding-bottom: 0px;}

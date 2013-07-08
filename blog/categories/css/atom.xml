@@ -4,7 +4,7 @@
   <title><![CDATA[Category: CSS | Carlos Cuba]]></title>
   <link href="http://carloscuba.com.pe/blog/categories/css/atom.xml" rel="self"/>
   <link href="http://carloscuba.com.pe/"/>
-  <updated>2013-07-02T12:19:40-05:00</updated>
+  <updated>2013-07-08T00:29:21-05:00</updated>
   <id>http://carloscuba.com.pe/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
@@ -12,6 +12,89 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cómo crear un simple Logo Animado sólo con CSS]]></title>
+    <link href="http://carloscuba.com.pe/blog/2013/07/logo-css-hover/"/>
+    <updated>2013-07-07T22:20:00-05:00</updated>
+    <id>http://carloscuba.com.pe/blog/2013/07/logo-css-hover</id>
+    <content type="html"><![CDATA[<p>Para los <em>amantes del CSS</em> y de los <em>diseños rápidos y simples</em>, hoy les presento esta especie de logo (fácilmente adaptable a sus necesidades) que nació de una idea que encontré mientras hacía mis acostumbrados recorridos por la web.</p>
+
+<p><iframe 
+	class="centeredIframe"
+	height="280px" 
+	width="60%" 
+	frameborder="0" 
+	scrolling="no" 
+	src="/assets/logo_animado_css.html">
+ </iframe></p>
+
+<!-- more -->
+
+
+<p>La idea, en general, es la siguiente: Tenemos un <code>div</code> contenedor de nuestro <em>logo</em>. Este div, al cual le hemos asignado la <em>clase &lsquo;container&rsquo;</em> (<code>class='container'</code>) es padre de seis divs adicionales; estos divs son, como se puede observar en el diseño líneas arriba, los seis segmentos horizontales de distinto color cada uno.</p>
+
+<p>Además de los distintos colores, agregamos un poco de sombra (<code>box-shadow</code>) y las esquinas redondeadas (del lado izquierdo -ya que las del derecho aun no están visibles-) del segmento superior e inferior, así como tamaños distintos (<code>width</code>) a cada uno de ellos para lograr el efecto inicial. Hasta aquí, tendremos la mitad del diseño logrado … Una figura no muy concreta a simple vista, verdad? … pues hagamos un poco de magia.</p>
+
+<p>Para empezar, a cada uno de nuestros segmentos deberemos asignarles la <strong>propiedad transition</strong>. Esta propiedad permite que los cambios realizados sobre los elementos afectados, en este caso nuestros segmentos de colores, no tengan efecto inmediato sino que se realicen en un cierto intervalo de tiempo (dentro del cual se va desde el valor A hasta el valor B pasando por todos los valores intermedios -para una mejor y más completa explicación pueden visitar <em><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions">este link</a></em>&ndash;). Entonces, dentro de nuestra hoja de estilos tendremos algo como esto:</p>
+
+<p><code>
+.a, .b, .c, .d, .e, .f {
+  …
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  ...
+}
+</code></p>
+
+<p>Con estas líneas nos aseguramos que todo cambio (<code>all</code>) realizado sobre los divs deseados (clases a, b, c, d, e y f) se haga en un intervalo de 0.5 segundos (<code>0.5s</code>) y de manera <em>suave</em> (<code>ease</code>). Hecho esto, nos queda definir bajo qué circunstancias queremos que empiece la animación; recurrimos al efecto <code>hover</code>:</p>
+
+<p><code>
+.container:hover &gt; .a,
+.container:hover &gt; .b,
+.container:hover &gt; .c,
+.container:hover &gt; .d,
+.container:hover &gt; .e,
+.container:hover &gt; .f {
+  width: 300px;
+}
+</code></p>
+
+<p>Así definimos que, si el usuario hacer pasar el mouse sobre cualquier punto de nuestro div contenedor, el ancho (<code>width</code>) de todos los segmentos de colores va a pasar del tamaño definido anteriormente hasta los 300px (y debido a <em>la propiedad transition</em>, veremos cómo cambian de tamaño en un lapso de 0.5 segundos). Luego de esto, añadimos las esquinas redondeadas (ahora sí las del lado derecho) de los segmentos superior e inferior, y listo! … Ya vemos cómo nuestro diseño <em>se transforma</em> al pasar el mouse sobre él.</p>
+
+<p>Pero … ¿y las letras que aparecen dentro del logo? Podría ser fácilmente otro div con texto dentro del mismo y correctamente posicionado en el centro de nuestro logo, pero no lo es. Es un <strong><a href="http://www.creativasfera.com/aprende-a-usar-los-pseudo-elementos-before-y-after-en-CSS">Pseudo-Elemento</a></strong> de nuestro div contenedor, y tiene asignadas las siguientes propiedades:</p>
+
+<p><code>
+.container:after {
+  content: 'sólo CSS';
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  text-align: center;
+  position: absolute;
+  height: 40px;
+  width: 300px;
+  margin: -90px 0 0 0;
+  color: #fbfbfb;
+}   
+</code></p>
+
+<p>Aquí no hay más truco que darle al texto (<code>content</code>)<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> el mismo color del fondo del diseño (<code>color: #fbfbfb</code>) para que no sea visible hasta que se realice la animación.</p>
+
+<p>Y ahora sí está listo! … Hay infinidad de posibilidades para crear nuevos diseños y usar estos sencillos estilos para lograr grandes e interesantes resultados.</p>
+
+<p>Si desean ver sólo el logo, y poder vizualizar el código completo usado, pueden hacer click <strong><a href="/assets/logo_animado_css.html">aquí</a></strong> y utilizar el Inspector Web del navegador que esten usando.</p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>La fuente usada puede ser encontrada <strong><a href="http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Lobster">aquí</a></strong>.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Selector de Navegador para CSS]]></title>
