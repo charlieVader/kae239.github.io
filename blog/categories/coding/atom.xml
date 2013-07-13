@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Coding | Carlos Cuba]]></title>
   <link href="http://carloscuba.com.pe/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://carloscuba.com.pe/"/>
-  <updated>2013-07-08T00:39:22-05:00</updated>
+  <updated>2013-07-13T17:09:01-05:00</updated>
   <id>http://carloscuba.com.pe/</id>
   <author>
     <name><![CDATA[Carlos Cuba]]></name>
@@ -12,6 +12,170 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Menú Lateral sólo con CSS]]></title>
+    <link href="http://carloscuba.com.pe/blog/2013/07/menu-lateral-css/"/>
+    <updated>2013-07-13T14:14:00-05:00</updated>
+    <id>http://carloscuba.com.pe/blog/2013/07/menu-lateral-css</id>
+    <content type="html"><![CDATA[<p>Un menú lateral, una barra de navegación, una forma sencilla de organizar el contenido de nuestra web y por sobre todo un aspecto muy importante del diseño de la misma. ¿Se puede hacer de manera sencilla? Por supuesto! … Aquí se los muestro.</p>
+
+<p><iframe 
+	class="centeredIframe"
+	height="270px" 
+	width="280px" 
+	frameborder="0" 
+	scrolling="no" 
+	src="/assets/menu_lateral_css.html">
+ </iframe></p>
+
+<!-- more -->
+
+
+<p>Para empezar, tenemos nuestra estructura básica html:</p>
+
+<p>```
+  <ul></p>
+
+<pre><code>&lt;li&gt;Inicio&lt;/li&gt;
+&lt;li&gt;Noticias&lt;/li&gt;
+&lt;li&gt;Videos&lt;/li&gt;
+&lt;li&gt;Contacto&lt;/li&gt;
+</code></pre>
+
+<p>  </ul></p>
+
+<p>```</p>
+
+<p>En nuestra hoja de estilos, empezaremos añadiento las propiedades para la lista (<code>&lt;ul&gt;</code>):</p>
+
+<p>```
+  ul {</p>
+
+<pre><code>list-style: none;
+margin: 0;
+padding: 0;
+width: 15em;
+</code></pre>
+
+<p>  }
+```</p>
+
+<p>Con esto nos aseguramos de deshacernos de las viñetas que aparecen automáticament en cada entrada (<code>&lt;li&gt;</code>) de nuestra lista, establecemos las propiedades <code>margin</code> y <code>padding</code> en 0 (para luego poder trabajar más a detalle en ellas), y definimos el ancho (<code>width</code>) en 15em (si desean aprender un poco más sobre las <strong>unidades em</strong>, aquí les dejo un <strong><em><a href="http://www.impressivewebs.com/understanding-em-units-css/">link</a></em></strong> bastante interesante).</p>
+
+<p>Luego empezamos a darle el aspecto deseado a nuestro menú, pero debemos tener muy en cuenta que vamos a modificar el aspecto de <strong>cada entrada de nuestra lista</strong>, así que tenemos que utilizar los selectores correspondientes (<code>ul &gt; li</code> &ndash; <em>con lo que dejamos bien en claro que los elementos afectados serán todos aquellos identificados con la etiqueta <code>&lt;li&gt;</code> que se encuentren dentro de un segmento delimitado por etiquetas <code>&lt;ul&gt;&lt;/ul&gt;</code></em>).</p>
+
+<p>Como primer paso, definiremos las siguientes propiedades básicas:</p>
+
+<p>```
+  ul > li {</p>
+
+<pre><code>background-color: rgb(69,72,77);    
+color: rgba(255, 255, 255, 0.9);
+font-size: 1.3em;
+height: 3em;
+line-height: 2.8em;
+padding-left: 1em;
+</code></pre>
+
+<p>  }
+```</p>
+
+<p>Hasta aquí tenemos simplemente una serie de palabras con fondo oscuro y algo de espaciado interlineal que no hacen que imaginemos que se trata de un menú, ¿verdad?. Pues cuando diseñamos, uno de los aspectos más importante es <strong>pensar como el usuario</strong> -que si bien es cierto no es una tarea fácil, nos va a ayudar muchísimo al momento de tratar de lograr diseños intuitivos-; por lo que a continuación, le daremos a nuestro menú un aspecto más cercano a lo que queremos que el usuario piense cuando lo vea. Dentro del mismo selector mencionado anteriormente, colocaremos las siguientes propiedades:</p>
+
+<p>```
+  ul > li {</p>
+
+<pre><code>...
+
+cursor: pointer;            
+box-shadow: inset 0px 1px 2px rgba(255,255,255,0.2);
+text-shadow: 1px 1px 4px rgba(black,0.3);
+</code></pre>
+
+<p>  }
+```</p>
+
+<p>¿Notan la diferencia? Ahora ya tenemos la sensación de que se trata de pestañas, o de opciones, ¿cierto? … Y además, el cursor cambia cuando lo pasamos sobre cualquier parte de nuestra lista! No es una hazaña lograr esto, pero personalmente creo que tiene un efecto súper importante respecto a lo que se puede percibir.</p>
+
+<p>Ahora haremos un poco de magia con la propiedad <code>transition</code> (<em>de la que pueden ver más detalles <strong><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions">aquí</a></strong></em>) para lograr que, cuando pasemos el mouse sobre cualquiera de las Entradas de nuestra lista (haciendo uso de la propiedad <code>hover</code>), obtengamos el efecto de &lsquo;crecimiento&rsquo; de los bordes de colores mostrados en la presentación del inicio de este post. Para ello, agregamos las siguientes propiedades (que en realidad es una sola, pero cubriendo el aspecto <strong>cross browser</strong> &ndash;<em>compatibilidad inter-exploradores web</em>&ndash;):</p>
+
+<p>```
+  ul > li {</p>
+
+<pre><code>...
+
+-moz-transition: 0.4s all ease-in-out;
+-webkit-transition: 0.4s all ease-in-out;
+-o-transition: 0.4s all ease-in-out;
+transition: 0.4s all ease-in-out;
+</code></pre>
+
+<p>  }
+```</p>
+
+<p>Asignando esta propiedad lograremos que, al definir (más adelante) los cambios que se realizarán cuando el evento <code>hover</code> sea activado, el crecimiento sea gradual y se realice en un intervalo de 0.4 segundos (aun no veremos el efecto causado porque todavía no definimos qué cambios se van a realizar).</p>
+
+<p>Una vez hecho esto, nos queda definir el estado inicial (el que se verá ni bien se cargue la web) así como la &lsquo;animación&rsquo; del evento hover:</p>
+
+<p>```
+  /<em> Selector para la Primera Entrada de nuestra lista &ndash; Estado Inicial </em>/</p>
+
+<p>  ul > li:first-child {</p>
+
+<pre><code>border-left: 6px solid #00AE68; /* color y ancho del borde izquierdo */
+border-radius: 0 1em 0 0; /* esquina redondeada */
+</code></pre>
+
+<p>  }
+<code>
+</code>
+  /<em> Selector para la Primera Entrada de nuestra lista &ndash; Evento Hover </em>/</p>
+
+<p>  ul > li:first-child:hover { border-left: 2.5em solid #00AE68; }
+```</p>
+
+<p>Básicamente, establecemos el tamaño inicial (con el color deseado) para el borde de la Entrada; luego, cuando se desencadene el evento hover, hacemos que el <strong><em>&lsquo;tamaño del borde crezca&rsquo;</em></strong> y, debido a que hemos asignado la propiedad <em>transition</em>, el crecimiento no será de golpe, sino que se realizará en un intervalo de tiempo definido.</p>
+
+<p>Para las demás Entradas la figura es bastante similar:</p>
+
+<p>```
+  ul > li:nth-child(2) { border-left: 6px solid #FF4C00; }
+  ul > li:nth-child(2):hover { border-left: 2.5em solid #FF4C00; }</p>
+
+<p>  ul > li:nth-child(3) { border-left: 6px solid #FF9400; }
+  ul > li:nth-child(3):hover { border-left: 2.5em solid #FF9400; }</p>
+
+<p>  ul > li:nth-child(4) {</p>
+
+<pre><code>border-left: 6px solid #0B5FA5;
+border-radius: 0 0 1em 0;
+</code></pre>
+
+<p>  }
+  ul > li:nth-child(4):hover { border-left: 2.5em solid #0B5FA5; }</p>
+
+<p>```</p>
+
+<p>En este punto ya tenemos un menú lateral bastante presentable (dentro de lo sencillo que es), pero si le agregamos una propiedad más veremos que el efecto es bastante significativo:</p>
+
+<p>```
+  ul > li:hover {</p>
+
+<pre><code>color: rgba(255,255,255,1);
+text-shadow: 1px 1px 2px white;
+</code></pre>
+
+<p>  }
+```</p>
+
+<p>Con esto lo único que hacemos es que, a parte de la animación asignada, el color del texto de la Entrada sobre la que estamos posando el mouse <em>se resalte</em> un poco y así se diferencie aun más del resto.</p>
+
+<p>Y eso es todo! … Nuestro menú lateral está listo para ser posicionado dentro de nuestra web (obviamente, y como siempre les comento, es sólo una de las tantas posibilidades de personalización que podemos lograr).</p>
+
+<p><em>PD: La fuente usada en este ejemplo es <strong>&lsquo;<a href="http://www.google.com/fonts#UsePlace:use/Collection:Indie+Flower">Indie Flower</a>&rsquo;</strong>.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cómo crear un simple Logo Animado sólo con CSS]]></title>
