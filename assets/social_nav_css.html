@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="es" />
+		<style>
+			@import url(http://fonts.googleapis.com/css?family=Autour+One);
+			@import url(http://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+			
+			@font-face {
+				font-family: 'IconFont';
+				src: url('../Font/iconFont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+				url('../Font/iconFont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+			}
+		
+			[data-icon]:before {
+				font-family: IconFont;
+				content: attr(data-icon);
+				speak: none;
+			}
+			
+			html, body {
+				margin: 0;
+				background-color: #39c8fb;
+			}
+			
+			section #social {
+				text-align: center;
+			}
+			
+			h2 {
+				margin: 80px 0px 40px;
+				color:#fff;
+				font-size: 2.4em;
+				font-family: 'Autour One', cursive;
+			}
+			
+			section #social li {
+				width: 120px;
+				height: 140px;
+				display: inline-block;
+				margin: 20px;
+				list-style: none;
+			}
+			
+			section #social li [class*="entypo-"] {
+				width: 120px;
+				height: 120px;
+				color: #39C8FB;
+				font-size: 3.4em;
+				line-height: 120px;
+				background-color: #fff;
+				
+				-webkit-border-radius: 15px;
+				border-radius: 15px;
+				
+				-webkit-transition: all 1.0s ease;  /* Chrome 1-25, Safari 3.2+ */
+				-moz-transition: all 1.0s ease;  /* Firefox 4-15 */
+				-o-transition: all 1.0s ease;  /* Opera 10.50–12.00 */
+				transition: all 1.0s ease;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+			}
+			
+			section #social li [class*="entypo-"]:hover {
+				-webkit-transform: rotate(360deg);  /* Chrome, Safari 3.1+ */  
+				-moz-transform: rotate(360deg);  /* Firefox 3.5-15 */
+				-ms-transform: rotate(360deg);  /* IE 9 */
+				-o-transform: rotate(360deg);  /* Opera 10.50-12.00 */
+				transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+				
+				-webkit-border-radius: 100px;
+				border-radius: 100px;
+			}
+			
+			section #social li a {
+				text-decoration: none;
+			}
+			
+			.text {
+
+				width: 120px;
+				height: 20px;
+				display: block;
+				padding-top: 20px;
+				color: #fff;
+				font-family: 'Patrick Hand SC', cursive;
+				font-size: 1.2em;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<section>
+			<ul id="social">
+				<h2>Social Nav</h2>
+				<li>
+					<a href="#"><div class="entypo-facebook">
+						<span aria-hidden="true" data-icon="&#x66;"></span>
+					</div></a>
+					<span class="text">Facebook</span>
+				</li>
+				<li>
+					<div class="entypo-twitter">
+						<span aria-hidden="true" data-icon="&#x74;"></span>				
+					</div>
+					<span class="text">Twitter</span>
+				</li>
+				<li>	
+					<div class="entypo-youtube">
+						<span aria-hidden="true" data-icon="&#x79;"></span>
+					</div>
+					<span class="text">YouTube</span>
+				</li>
+				<li>
+					<div class="entypo-instagram">
+						<span aria-hidden="true" data-icon="&#x69;"></span>
+					</div>
+					<span class="text">Instagram</span>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>
+		
